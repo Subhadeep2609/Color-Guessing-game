@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Color Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+
+      #color-code {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        color: #00ffcc;
+      }
+
+      #options-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .color-box {
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      }
+
+      .color-box:hover {
+        transform: scale(1.05);
+      }
+
+      #result {
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      #play-again {
+        margin-top: 1rem;
+        padding: 10px 20px;
+        background-color: #00ffcc;
+        color: #000;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎨 Guess the Color</h1>
+    <div id="color-code">rgb(?, ?, ?)</div>
+
+    <div id="options-container"></div>
+
+    <div id="result"></div>
+    <button id="play-again">Play Again</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
